@@ -108,9 +108,6 @@ class BooksList extends CBitrixComponent
         return $params;
     }
 
-    /**
-     * @return mixed|void
-     */
     public function executeComponent(): void
     {
         $this->checkModules();

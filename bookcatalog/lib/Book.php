@@ -42,7 +42,7 @@ class BookTable extends DataManager
      *
      * @return string
      */
-    public static function getTableName()
+    public static function getTableName(): string
     {
         return 'books';
     }
@@ -52,7 +52,7 @@ class BookTable extends DataManager
      *
      * @return array
      */
-    public static function getMap()
+    public static function getMap(): array
     {
         return [
             new IntegerField(
@@ -127,7 +127,7 @@ class BookTable extends DataManager
      *
      * @return array
      */
-    public static function validateTitle()
+    public static function validateTitle(): array
     {
         return [
             new LengthValidator(null, 255),
@@ -139,7 +139,7 @@ class BookTable extends DataManager
      *
      * @return array
      */
-    public static function validateDescription()
+    public static function validateDescription(): array
     {
         return [
             new LengthValidator(null, 255),
@@ -151,7 +151,7 @@ class BookTable extends DataManager
      *
      * @return array
      */
-    public static function validateYear()
+    public static function validateYear(): array
     {
         return [
             new RegExpValidator('/\d+/'),
@@ -163,7 +163,7 @@ class BookTable extends DataManager
      *
      * @return array
      */
-    public static function validatePrice()
+    public static function validatePrice(): array
     {
         return [
             new RegExpValidator('/\d+/'),

@@ -52,7 +52,6 @@ class AddBook extends CBitrixComponent
 
     /**
      * @param $request
-     * @return mixed|void
      */
     protected function createBook($request): void
     {
@@ -73,9 +72,6 @@ class AddBook extends CBitrixComponent
         }
     }
 
-    /**
-     * @return mixed|void
-     */
     public function executeComponent(): void
     {
         $this->checkModules();

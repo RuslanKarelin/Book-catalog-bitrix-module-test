@@ -34,7 +34,7 @@ class AuthorTable extends DataManager
      *
      * @return string
      */
-    public static function getTableName()
+    public static function getTableName(): string
     {
         return 'authors';
     }
@@ -44,7 +44,7 @@ class AuthorTable extends DataManager
      *
      * @return array
      */
-    public static function getMap()
+    public static function getMap(): array
     {
         return [
             new IntegerField(
@@ -88,7 +88,7 @@ class AuthorTable extends DataManager
      *
      * @return array
      */
-    public static function validateFio()
+    public static function validateFio(): array
     {
         return [
             new LengthValidator(null, 255),
@@ -100,7 +100,7 @@ class AuthorTable extends DataManager
      *
      * @return array
      */
-    public static function validateCountry()
+    public static function validateCountry(): array
     {
         return [
             new LengthValidator(null, 255),
