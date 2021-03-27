@@ -1,0 +1,44 @@
+.check-spm {
+    display: none;
+}
+
+#add-book-form {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.add-book__form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#add-book-form .file-selectdialog .file-extended .file-selector {
+    height: 70px;
+}
+
+.form-group {
+    margin: 15px;
+}
+
+.add-book__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.add-book__item {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.add-book__success {
+    color: green;
+    margin: 15px;
+}
+
+.add-book__errors {
+    color: red;
+}
