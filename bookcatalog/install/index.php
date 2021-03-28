@@ -87,6 +87,7 @@ Class BookCatalog extends CModule
     function UnInstallFiles()
     {
         DeleteDirFilesEx("/local/components/bookcatalog");
+        DeleteDirFilesEx("/upload/bookcatalog");
         return true;
     }
 }
